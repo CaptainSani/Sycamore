@@ -1,4 +1,5 @@
 //Sycamore mentorship program (Backend track)
+//Introduction to Git and GitHub
 
 console.log("There is Git and there is GitHub");
 console.log("Git is a version control for tracking changes in code while Github is a platform which hosts git repositories and provides a freindly user interface for developers to use.");
