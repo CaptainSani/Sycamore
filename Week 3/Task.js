@@ -40,9 +40,11 @@ console.log(newArray);
 
 // Task 4
 
-function runTwice(func){
-    func();
-    func();
+function runTwice(word, times){
+
+    for (let i = 0; i < times; i++){
+        word();
+    }
+
 }
-const sayMyName = () => console.log("Hello Sani Dogo!")
-runTwice(sayMyName);
+ runTwice(() => console.log("Hello Sani!"), 2)
