@@ -110,6 +110,7 @@ async function processWeather(city){
     }
 }
 
-// Calling the processWeather() function
+// Calling the processWeather() function for correct city
 processWeather("Lagos");
-//processWeather("Abuja")
+// To confirm for wrong city
+processWeather("Abuja")
