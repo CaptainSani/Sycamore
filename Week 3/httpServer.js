@@ -1,14 +1,14 @@
 // Task 1
 // Set up a simple HTTP server using the built-in Node.js http module.
 
-// const http = require("http");
-// const server = http.createServer((req, res) => {
-//   res.writeHead(200, { "Content-Type": "text/plain" });
-//   res.end("Hello, and welcome to my page");
-// });
-// server.listen(3000, () => {
-//   console.log("Server running on port 3000");
-// });
+const http = require("http");
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { "Content-Type": "text/plain" });
+  res.end("Hello, and welcome to my page");
+});
+server.listen(3000, () => {
+  console.log("Server running on port 3000");
+});
 
 // Task 2
 // Set up a basic Express.js server, and define routes for / (home) and /about .
