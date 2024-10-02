@@ -22,7 +22,7 @@ app.get("/about", (req, res) => {
   res.send("About page")
 })
   app.listen(8080, () => { 
-    console.log("Express server running on port 3000"); 
+    console.log("Express server running on port 8080"); 
   });
 
   //Task 3
