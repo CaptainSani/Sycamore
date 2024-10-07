@@ -14,7 +14,7 @@ const logger =
 app.use(logger);
 
 app.use((req, res, next) => {
-  console.log("This is a functional middleware");
+  console.log("Middleware active");
   next();
 });
 app.use(express.json());
