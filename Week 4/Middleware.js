@@ -3,20 +3,23 @@
 
 const express = require("express");
 const app = express();
+const PORT = 8080;
 
-const logger =
-  (req,
-  res,
-  (next) => {
-    console.log(`${req.method} request to ${req.url}`);
-    next();
+app.listen(PORT, () => { 
+    console.log("Express server running on port 8080"); 
   });
-app.use(logger);
+
+const logInfo = (req, res, next) => {
+    console.log(`${req.method} request to: ${req.url} path`);
+    next();
+  };
+app.use(logInfo);
 
 app.use((req, res, next) => {
   console.log("Middleware active");
   next();
 });
+
 app.use(express.json());
 
 const authentication = (req, res, next) => {
